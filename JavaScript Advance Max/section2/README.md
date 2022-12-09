@@ -21,3 +21,8 @@
  - let 21Players ; ❌ => starting with digits not allowed 
  - let user-b; ❌ => not special characters 
  - let let ;❌ => Keywords not allowed
+# Data Type 
+    * Number  =>2 ,-3,22 , 900 ==>[important for calculations and cod where you need to work with a number ]
+    * String(Text) => "Hasan" , "software" , "computer" ==>
+    * boolean => true , false 
+    
