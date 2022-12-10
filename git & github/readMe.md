@@ -16,5 +16,9 @@
 # Terminal 
 * The Terminal is a simple command-line interface for entering ObjectScript commands and displaying current values. It is useful during learning, development, and   debugging.
 ![download](https://user-images.githubusercontent.com/92353024/206868000-6dd45b9a-0242-40f4-99ae-22e00746f9f3.jpg)
-# the terminal common command
+# most termnal command common 
+* cd => is mean Change Directory to go to the specific directory 
+ - example = > cd name_directory 
+           = > cd .. => to back to the previous directory
+* ls => to show the directories and files  in the currect directory
 
