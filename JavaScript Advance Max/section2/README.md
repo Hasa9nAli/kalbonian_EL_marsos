@@ -31,5 +31,5 @@
     - function nameOfFunction (parameters[optional]){\n
     - //body 
     - }
-    - part 2 Call function 
+* part 2 Call function 
     - nameOfFunction(); 
