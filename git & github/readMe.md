@@ -15,10 +15,18 @@
 * Git is bones and flesh of version control , while Github gives you the platform to work with your repository easier 
 # Terminal 
 * The Terminal is a simple command-line interface for entering ObjectScript commands and displaying current values. It is useful during learning, development, and   debugging.
+
 ![download](https://user-images.githubusercontent.com/92353024/206868000-6dd45b9a-0242-40f4-99ae-22e00746f9f3.jpg)
+
 # most termnal command common 
 * cd => is mean Change Directory to go to the specific directory 
  - example = > cd name_directory 
            = > cd .. => to back to the previous directory
 * ls => to show the directories and files  in the currect directory
+* mkdir => it's  mean [make directory] 
+  - to use it use this menner => mkdir name_new_directory
+* rm => to remove file 
+  - to use it use this menner with file => rm name_file.extention
+  - to use it use this menner with dir  => rm -rf name_file.extention
+  
 
