@@ -27,9 +27,9 @@
     * boolean => true , false 
 # Function 
  - the syntax of function 
- * part 1 Define function \n
-    function nameOfFunction (parameters[optional]){\n
-    //body \n
-    }\n
-    part 2 Call function \n
-    nameOfFunction(); \n
+ * part 1 Define function 
+    - function nameOfFunction (parameters[optional]){\n
+    - //body 
+    - }
+    - part 2 Call function 
+    - nameOfFunction(); 
