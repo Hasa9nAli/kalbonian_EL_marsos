@@ -25,4 +25,11 @@
     * Number  =>2 ,-3,22 , 900 ==>[important for calculations and cod where you need to work with a number ]
     * String(Text) => "Hasan" , "software" , "computer" ==>
     * boolean => true , false 
-    
+# Function 
+ - the syntax of function 
+ * part 1 Define function
+    function nameOfFunction (parameters[optional]){
+    //body 
+    }
+    part 2 Call function 
+    nameOfFunction(); 

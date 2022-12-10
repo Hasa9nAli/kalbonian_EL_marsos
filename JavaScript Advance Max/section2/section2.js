@@ -17,3 +17,7 @@ let calculationDescription =`(${defaultResult} + 10 ) *3 / 2-1`;
 console.log(calculationDescription)
 let errorMessage = "An Error \n" + "occurred!"
 console.log(errorMessage) 
+// function 
+function add(firstNumber, secondNumber) {
+    return firstNumber + secondNumber ;     
+}
