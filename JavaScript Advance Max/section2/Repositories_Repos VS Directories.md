@@ -23,7 +23,7 @@
   - create separate development path without overriding progress
   - separate different end goals of you project 
   - Creates separate branches for each stage of development(release, development, fixes, master)
-  - img here 
+![Screenshot 2022-12-14 200417](https://user-images.githubusercontent.com/92353024/207664183-2053ebe7-505d-4888-89bc-529a17ca6928.jpg)
 
 ## Branches instruction 
   * git branch ==> uses to show all branch 
