@@ -30,3 +30,36 @@
   - to use it use this menner with dir  => rm -rf name_file.extention
   
 
+# Workflow Diagram
+![128hsgntnsu9bww0y8sz](https://user-images.githubusercontent.com/92353024/207384159-35fd133a-296d-4943-b58a-c32f1071c16d.jpeg)
+-----------------------------------------------------
+# Branch Introduction 
+* git branches are a way to create separate development paths without overriding or creating copies of your project .
+* Branches can be added, deleted , and merged , just like regular commits . 
+# use of Branches common
+## Branches can be used to : 
+  - create separate development path without overriding progress
+  - separate different end goals of you project 
+  - Creates separate branches for each stage of development(release, development, fixes, master)
+  - img here 
+
+## Branches instruction 
+  * git branch ==> uses to show all branch 
+  * git branch nameOfNewBranch ==> use to create new branch 
+  * git checkout nameOfNewBranch ==> use to change current branch to another 
+  * git branch -d nameOfNewBranch ==> to delete branch 
+  * git checkout -b nameNewBranch ==> create new branch and go to this new branch
+  * git branch -m newName ==> to rename branch
+  --------------------
+## Merge Branch 
+  * git merge nameAnotherBranch => to marge the current branch with the name who we write it in command 
+--------------------------------
+# What is GitHub 
+  * GitHub is an application that allows yoy to store remote repositories on their servers . 
+  * They also provide a user-friendly platform to interact with & manage your repositories 
+  * GitHub is public allowing millions to share their projects to the world 
+# GitHub allows yo to 
+  * Have a portfolio of your best work .
+  * Open opportunities you might not have with a local repository . 
+  * Easy to access from any device in any location .
+  * Industry standard for hosting Git repositories 
