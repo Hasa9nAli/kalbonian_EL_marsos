@@ -25,6 +25,8 @@
     * Number  =>2 ,-3,22 , 900 ==>[important for calculations and cod where you need to work with a number ]
     * String(Text) => "Hasan" , "software" , "computer" ==>
     * boolean => true , false 
+    * Object => {key:value }  =>{name:'Max', age:31}==>[important for grouped / related data, helps you with organizing data]
+    * Array => [1, 3, 5] ==>[important for list data, unknown amount of data ]
 # Function 
  - the syntax of function 
  * part 1 Define function 
