@@ -82,49 +82,47 @@ function endRound() {
   if (currentMonsterHealth <= 0 && currentPlayerHealth > 0) {
     alert("You won!");
     writeToLog(
-        LOG_EVENT_GAME_OVER,
-        'PLAYER WON',
-        currentMonsterHealth,
-        currentPlayerHealth
-      );
+      LOG_EVENT_GAME_OVER,
+      "PLAYER WON",
+      currentMonsterHealth,
+      currentPlayerHealth
+    );
   } else if (currentPlayerHealth <= 0 && currentMonsterHealth > 0) {
     alert("you lost!");
     writeToLog(
-        LOG_EVENT_GAME_OVER,
-        'MONSTER WON',
-        currentMonsterHealth,
-        currentPlayerHealth
-      );
+      LOG_EVENT_GAME_OVER,
+      "MONSTER WON",
+      currentMonsterHealth,
+      currentPlayerHealth
+    );
   } else if (currentMonsterHealth <= 0 && currentPlayerHealth <= 0) {
     alert("You have a draw! ");
     writeToLog(
-        LOG_EVENT_GAME_OVER,
-        'A DRAW',
-        currentMonsterHealth,
-        currentPlayerHealth
-      );
+      LOG_EVENT_GAME_OVER,
+      "A DRAW",
+      currentMonsterHealth,
+      currentPlayerHealth
+    );
   }
   if (currentMonsterHealth <= 0 || currentPlayerHealth <= 0) reset();
 }
 function attackMonster(mode) {
-  let maxDamage;
-  let logEvent ;
-  if (mode === MODE_ATTACK) {
-    maxDamage = ATTACK_VALUE;
-    logEvent = LOG_EVENT_PLAYER_ATTACK
-  } else if (mode === MODE_STRONG_ATTACK) {
-    maxDamage = STRONG_ATTACK_VALUE;
-    logEvent = LOG_EVENT_PLAYER_STRONG_ATTACK
-
-  }
+  let maxDamage = mode === MODE_ATTACK ? ATTACK_VALUE : STRONG_ATTACK_VALUE;
+  let logEvent =
+    mode === MODE_ATTACK
+      ? LOG_EVENT_PLAYER_ATTACK
+      : LOG_EVENT_PLAYER_STRONG_ATTACK;
+  // if (mode === MODE_ATTACK) {
+  //   maxDamage = ATTACK_VALUE;
+  //   logEvent = LOG_EVENT_PLAYER_ATTACK
+  // } else if (mode === MODE_STRONG_ATTACK) {
+  //   maxDamage = STRONG_ATTACK_VALUE;
+  //   logEvent = LOG_EVENT_PLAYER_STRONG_ATTACK
+ 
+  // }
   const damage = dealMonsterDamage(ATTACK_VALUE);
   currentMonsterHealth -= damage;
-  writeToLog(
-    logEvent,
-    damage,
-    currentMonsterHealth,
-    currentPlayerHealth
-  );
+  writeToLog(logEvent, damage, currentMonsterHealth, currentPlayerHealth);
   endRound();
 }
 adjustHealthBars(chosenMaxLife);
@@ -143,7 +141,7 @@ function healPlayerHandler() {
     healValue = HEAL_VALUE;
   }
   increasePlayerHealth(healValue);
-  currentPlayerHealth +=  healValue;
+  currentPlayerHealth += healValue;
   writeToLog(
     LOG_EVENT_PLAYER_HEAL,
     healValue,
