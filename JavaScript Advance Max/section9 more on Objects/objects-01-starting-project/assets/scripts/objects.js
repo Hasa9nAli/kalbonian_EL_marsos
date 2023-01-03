@@ -1,47 +1,51 @@
-const movieList = document.getElementById('movie-list'); 
+const addMovieBtn = document.getElementById("add-movie-btn");
+const searchBtn = document.getElementById("search-btn");
+const movies = [];
 
-const userChosenKeyName = 'level' ;; 
+const renderMovies = (filter = '') => {
+  const movieList = document.getElementById("movie-list");
+  if (movies.length === 0) {
+    movieList.classList.remove("visible");
+    return;
+  } else {
+    movieList.classList.add("visible");
+  }
+  movieList.innerHTML = "";
 
-let person = {
-  "first name": "Max",
-  [userChosenKeyName] : '...',
-  age: 30,
-  hobbies: ["Sports", "Cooking"],
-  greet: function () {
-    alert("Hi There");
-  },
-  1.5 : "OK",
+  const filteredMovies = !filter ? movies : movies.filter((movie) => {movie.info.title.includes(filter)
+  })
+
+  movies.forEach((movie) => {
+    const movieEl = document.createElement("li");
+    // Error  // movieEl.textContent = movie.info.title + '-' + movie.info[extraName];
+    let text = '\n'+movie.info.title + ' - ';
+    for (const key in movie.info) {
+      if (key !== 'title')
+      text = text + `${key}: ${movie.info[key]} \n`;
+    }
+    movieList.append(text);
+    movieList.style.color = "#f0f"
+    movieList.style.fontWeight = "bold"
+  
+  });
 };
-console.log(person['level'])
-person.greet();
-// ................
-// Adding , Modifying  & Deleting  Properties
+const addMovieHandler = () => {
+  const title = document.getElementById("title").value;
+  const extraName = document.getElementById("extra-name").value; //
+  const extraValue = document.getElementById("extra-value").value;
 
-/*
-person = {
-    name: "Max",
-    age: 30,
-    hobbies: ["Sports", "Cooking"],
-    greet: function () {
-        alert("Hi There");
-    },
-    //  isAdmin: true,
+  if (
+    title.trim() === "" ||
+    extraName.trim() === "" ||
+    extraValue.trim() === ""
+  ) {
+    return;
+  }
+  const newMovie = {
+    info: { title, [extraName]: extraValue },
+    id: Math.random(),
+  };
+  movies.push(newMovie);
+  renderMovies();
 };
-*/ 
-// Adding
-person.isAdmin = true;
-// Modifying 
-person.age = 31 ;
-// Deleting
-delete person.age; 
-console.log(person);
-console.log(person["first name"]) ; 
-console.log(person["isAdmin"]);
-console.log(person["1.5"])
-console.log(person[1.5])
-const keyName = "first name" ; 
-console.log(person[keyName])
-const nnn = 'value'
-person.nnn = 10 ; 
-// undefined 
-console.log(person[nnn])
+addMovieBtn.addEventListener("click", addMovieHandler);
