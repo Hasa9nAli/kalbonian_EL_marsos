@@ -285,7 +285,7 @@ input[type="search"]::-webkit-search-results-decoration {
     display: flex;
     gap : 3.2rem;
     align-items: center;
-    margin: 3.8rem ;
+    margin: 1.6rem 3.6rem ;
     height: 30rem;
     overflow: hidden;
     padding: 3.2rem;
@@ -329,3 +329,56 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 50%;
 }
 /* end section work  */
+/* start need us section */
+.need-us-section{
+    background: #0e1133;
+    color: #fff;
+    padding:3.2rem 6.4rem;
+    margin-top:6.4rem
+}
+.container-of-text-head-need-us-section{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.container-of-boxes{
+    display: flex;
+    justify-content:space-between
+}
+
+.container-boxes-left-element{
+    display: flex;
+    flex-direction: column;
+    gap:1.6rem;
+}
+.container-boxes-left-element .box{
+    
+    border-radius: .5rem;
+    padding:1.6rem 2.2rem;
+    border: 1px solid #1d1f34;
+    display: flex;
+}
+.container-boxes-left-element p {
+    color:#8a8b9c;
+    margin-top: .5rem;
+}
+
+.container-of-text-head-need-us-section h3 {
+    font-size: 2.8rem;
+    color:#fff; 
+}
+.container-of-text-head-need-us-section p{
+    margin-top:1rem;
+    margin-bottom: 4.8rem;
+}
+.cicle{
+    width:1.6rem;
+    height:1.6rem;
+    background: #ff3e66;
+    border: 4px solid #361a30;
+    border-radius: 50%;
+    margin-right: .4rem;
+    /* box-shadow: 0 0 20px#ff3e65bd; */
+}
+.right-img img{width:80%}
