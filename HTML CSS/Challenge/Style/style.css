@@ -10,13 +10,9 @@
 
 }
 
-html{
-    width: 62.5%;
-}
 /* start header */ 
 .header{
     background: var(--main-color);
-    width:100vw;
     padding:1.6rem 3.6rem; 
     overflow-y: hidden;
 }
@@ -89,6 +85,35 @@ html{
 }
 /*  end header */
 /*start hero section*/
+.head-container-work-section{
+    padding: 6.4rem 6.4rem 0 6.4rem;
+}
+.container-the-full{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.secondry-head{
+    font-size:1.6rem;
+    margin-bottom: 1.2rem;
+}
+.container-btn-View-all-features{
+    display: flex;
+    align-items:center;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 1.2rem;
+    padding:.6rem 1.6rem
+}
+.container-btn-View-all-features a{
+    color:#000 ; 
+    text-decoration: none;
+    margin-right: .7rem;
+    font-weight: 500
+}
+.container-btn-View-all-features svg{
+    color:#000;
+    width:1.2rem
+}
 .hero-section-container{
     padding: 6.4rem 0 0 3.2rem;
     display: flex;
@@ -98,7 +123,6 @@ html{
     flex-shrink: 3;
     flex-grow: 3;
     background-color: var(--main-color);
-    width:100vw;
     gap:12.6rem;
     overflow-y: hidden;
 
@@ -191,7 +215,7 @@ input[type="search"]::-webkit-search-results-decoration {
     margin-right: .3rem;
 }
 .hero-img{
-    width:37rem;
+    width:100%;
     height: 100%;
 }
 /*end hero*/
@@ -201,7 +225,7 @@ input[type="search"]::-webkit-search-results-decoration {
     padding:4.2rem ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width:100vw;
+    /* width:100vw; */
     justify-content: space-between;
     gap: 1.6rem;
 }
@@ -256,5 +280,52 @@ input[type="search"]::-webkit-search-results-decoration {
 {
     color:rgb(59, 59, 59); 
     text-decoration: none
+}
+.container-marketing-box{
+    display: flex;
+    gap : 3.2rem;
+    align-items: center;
+    margin: 3.8rem ;
+    height: 30rem;
+    overflow: hidden;
+    padding: 3.2rem;
+    background: #f0f1f7;
+
+    
+}
+.container-marketing-box .left-box-img img{
+    width:100%;
+    margin-top:12rem
+}
+.head-marketing-box-container{
+    display: flex;
+    flex-direction: column;
+    gap:1.4rem
+}
+.head-marketing-box-container h1{
+    font-size:3.2rem;
+    color:#0f1234
+}
+.p-marketing{
+    color: #fe5075 ;
+    font-weight: 500;
+
+}
+.p-Mucker , .p-jolly{
+    color:#78787a;
+}
+.correct-marketing-box{
+    display: flex;
+    gap:1.2rem
+}
+.correct-marketing-box h5{
+   font-size:1.2rem;
+   color:#121537;
+   margin-bottom: .5rem;
+}
+.container-marketing-box svg {
+    stroke: rgb(255, 255, 255);
+    background: #32c36a;
+    border-radius: 50%;
 }
 /* end section work  */
