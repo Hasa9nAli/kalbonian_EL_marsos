@@ -556,3 +556,49 @@ input[type="search"]::-webkit-search-results-decoration {
 .container-app-store-google-play-btn {
     margin-top:1.6rem
 }
+/* end the download our app  */
+/* start plan section */
+.section-plan{
+    padding: 3.2rem 3.2rem;
+}
+.head-container-of-plan-section{
+ display:flex; 
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;   
+ /* margin-block: 1.2rem; */
+ /* border: 1px solid #000; */
+}
+.head-container-of-plan-section h4{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;   
+}
+.head-container-of-plan-section p {
+    color:#000000a4;
+    font-weight: 500;
+}
+.type-plan-container-btn-parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+.type-plan-container-btn{
+    border: 1px solid #0000001a;
+    padding: .3rem ;
+    border-radius: 1.6rem;
+}
+.type-plan-container-btn button {
+    font-size:1.2rem;
+    border-radius:1.2rem;
+    padding: .3rem 1.2rem;
+    border: none;
+}
+.type-plan-container-btn .first-btn{
+    background: #ff3e66;
+    color:#fff;
+}
+.type-plan-container-btn .second-btn{
+    color:#000;
+    background-color:transparent;
+}
