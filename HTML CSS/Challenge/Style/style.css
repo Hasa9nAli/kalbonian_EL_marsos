@@ -758,3 +758,29 @@ size: 1.6rem;
 .container-arrow-left-right-man div svg{
     stroke: #fff;
 }
+.head-sponser-head{
+    text-align: center;
+    
+}
+.head-sponser-head h4 {
+    font-size:1.6rem;
+    margin-bottom: 1.2rem;
+}
+.head-sponser-head p{
+    font-size:.8rem;
+    color:#07070691
+}
+
+.sponsers-element-container{
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap:1.2rem;
+    padding : 3.2rem 15.6rem;
+    gap:1.6rem;
+}
+.sponsers-element-container div{
+    padding: 1rem 1.6rem;
+    box-shadow: 0 0 1.2rem #00000056;
+}
