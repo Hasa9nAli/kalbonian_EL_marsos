@@ -604,6 +604,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .continer-of-plans-boxes{
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-evenly;
     /* gap:1.6rem; */
     margin-top:3.2rem
@@ -776,6 +777,8 @@ size: 1.6rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-shrink: 3;
+    flex-grow:3;
     row-gap:1.2rem;
     padding : 3.2rem 15.6rem;
     gap:1.6rem;
@@ -783,4 +786,94 @@ size: 1.6rem;
 .sponsers-element-container div{
     padding: 1rem 1.6rem;
     box-shadow: 0 0 1.2rem #00000056;
+}
+/* footer */
+footer {
+    padding:3.2rem 9.6rem;
+    background: #eef1f6;
+}
+.container-of-footer{
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    flex-shrink: 3;
+    justify-content:space-evenly;
+}
+.logo-side-of-footer{
+    display: flex;
+    flex-direction: column;
+    /* gap:1.2rem */
+}
+.logo-side-of-footer img{
+    width: 100px;
+    margin-bottom:1.6rem ;
+
+}
+.logo-side-of-footer p {
+    color:#757188
+}
+.footer-container-logos{
+    margin-top:1.6rem
+}
+.read-more-footer a{
+    font-size:1rem ;
+    color:#0e1133
+}
+.read-more-footer svg{
+    transform: scale(.8)
+}
+.footer-container-logos ion-icon{
+    font-size:1.2rem; 
+    background: rgb(255, 255, 255);
+    color:#0e1133;
+    padding:.5rem;
+    border-radius: .5rem;
+}
+.nav-footer{
+    display:flex;
+    flex-direction: column;
+    gap:.6rem;
+    margin-top:1.2rem;
+}
+.nav-footer a{
+    text-decoration: none;
+    color:#3e4147;
+}
+.footer-get-in-touch h4{
+    margin-bottom:1.2rem;
+}
+.company-nav-footer div{
+    margin-bottom:.8rem
+}
+.company-nav-footer div ion-icon{
+    color:#2a6df5
+}
+.company-nav-footer div a {
+    color:#3e4147;
+    text-decoration: none;
+}
+.download-footer{
+display: flex;
+gap:1.2rem
+}
+.copyright-download{
+    display: flex ;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.footer-app{
+    display: flex;
+    gap:.3rem;
+    border:1px solid rgba(204, 204, 204, 0.774);
+    padding:.5rem 1.6rem;
+    border-radius: .3rem; 
+}
+.footer-app{
+    color:#0e1133;
+    text-decoration: none;
+}
+.app-store-footer{
+    background: #fff;
 }
