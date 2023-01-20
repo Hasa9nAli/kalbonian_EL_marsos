@@ -19,3 +19,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect/e
 * $0.offsetHeight
 * $0.scrollHeight 
 * $0.scrollTop // top البعد عن ال
+
+* Element.scrollTo() // https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo 
+
+* Element.scrollBy() //https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollBy

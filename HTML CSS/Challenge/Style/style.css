@@ -83,6 +83,17 @@
     background-color:#272d64;
     transition: all .5s ease-in-out;
 }
+.button-header-container{
+    display: flex;
+    justify-content: center;
+    gap:1.2rem
+}
+
+.button-header-container svg{
+    transform: scale(1.5);
+    stroke:#0f1234;
+    display: none;
+}
 /*  end header */
 /*start hero section*/
 .head-container-work-section{
@@ -389,6 +400,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .container-boxes-how-does-work{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     align-content: center;
     justify-content: center;
