@@ -33,7 +33,10 @@ const eventHappenWhenClickedToAnotherButton = event=>{
 //    event.target.disabled = true; // make button not work 
 }
 const buttons = document.querySelectorAll("button");
+
 buttons.forEach((btn)=>{ // btn is the element of array ... 
+    console.log("Button CLICKED")
+
     btn.addEventListener("mouseenter", eventHappenWhenClickedToAnotherButton)
 })
 
@@ -41,6 +44,8 @@ buttons.forEach((btn)=>{ // btn is the element of array ...
 
 const form = document.querySelector("form");
 form.addEventListener("submit", (event)=>{
+    event.stopPropagation();
+
     event.preventDefault(); // prevent submit make the page is not reload because the request server 
     console.log(event) ;
 })
@@ -58,6 +63,10 @@ function scrollHandler() {
     }
 }
  
+div.addEventListener("click", (event)=>{
+    event.stopPropagation();
+    console.log("DIV CLICKED")
+    console.log(event)});
 window.addEventListener('scroll', scrollHandler);
 
 
